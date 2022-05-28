@@ -1,11 +1,9 @@
 git 초기 설정
 
-`$ git config --global user.name "oneash"`
-
-`$ git config --global user.email "oneash0824@naver.com"`
-
-
-<br/>
+```bash
+$ git config --global user.name "oneash"
+$ git config --global user.email "oneash0824@naver.com"
+```
 
 ### Git 저장소 생성
 
