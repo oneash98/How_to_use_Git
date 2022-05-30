@@ -19,17 +19,13 @@ $ git config --global user.email "oneash0824@naver.com"
 
 ### Git의 3가지 Area
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b9281215-0157-4da6-bd45-7a92d388f2a6/Untitled.png)
-
-- Working Directory: 내가 작업하고 있는 프로젝트으 디렉토리
+- Working Directory: 내가 작업하고 있는 프로젝트의 디렉토리
 - Staging Area: 커밋을 하기 위해 `$ git add` 명령어로 추가한 파일들이 모여있는 공간
 - Repository: 커밋들이 모여있는 장소
 
 ### File의 라이프 사이클
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3348eade-4382-4105-9e6d-a6d2cfe23a73/Untitled.png)
-
-- Untracked: Working Directory에 있는 파일이지만, Git으로 버전관리를 하지 않느 상태
+- Untracked: Working Directory에 있는 파일이지만, Git으로 버전관리를 하지 않는 상태
 - Unmodified: 신규로 파일이 추가되었을 때
 - Modified: 파일이 추가된 이후 해당 파일이 수정되었을 때
 - Staged: Staging Area에 반영된 상태
