@@ -1,3 +1,24 @@
+git은 DVCS(Distributed Version Control Systems). 원격저장소 외에 각각의 로컬에 데이터 저장.
+
+일반적인 Version Control System들은 각 파일의 변화를 따로 관리.
+
+Git은 Snapshot이라는 개념으로, 프로젝트의 상태를 저장할 때마다 그 순간의 모든 파일의 모습을 보관.
+
+### Git의 3가지 Area
+
+- Working Directory: 내가 작업하고 있는 프로젝트의 디렉토리
+- Staging Area: 커밋을 하기 위해 `$ git add` 명령어로 추가한 파일들이 모여있는 공간. (index)
+- Repository: 커밋들이 모여있는 장소 (.git)
+
+### File의 라이프 사이클
+
+- Untracked: Working Directory에 있는 파일이지만, Git으로 버전관리를 하지 않는 상태
+- Unmodified: 신규로 파일이 추가되었을 때
+- Modified: 파일을 수정하였지만, 아직 로컬 데이터베이스에 커밋을 하지 않은 상태
+- Staged: Staging Area에 반영된 상태. 곧 커밋할 것이라고 표시한 상태.
+- Committed: 로컬 데이터베이스에 안전하게 저장된 상태
+
+<br/>
 git 초기 설정
 
 ```bash
@@ -16,19 +37,6 @@ $ git config --global user.email "oneash0824@naver.com"
 `$ git init diretory`
 
 → `.git`이라는 디렉토리 생성됨. (`.`으로 시작하는 파일이나 디렉토리는 숨김처리 되어서 `ls` 로는 안보임. `ls -a`명령어로 확인 가능)
-
-### Git의 3가지 Area
-
-- Working Directory: 내가 작업하고 있는 프로젝트의 디렉토리
-- Staging Area: 커밋을 하기 위해 `$ git add` 명령어로 추가한 파일들이 모여있는 공간
-- Repository: 커밋들이 모여있는 장소
-
-### File의 라이프 사이클
-
-- Untracked: Working Directory에 있는 파일이지만, Git으로 버전관리를 하지 않는 상태
-- Unmodified: 신규로 파일이 추가되었을 때
-- Modified: 파일이 추가된 이후 해당 파일이 수정되었을 때
-- Staged: Staging Area에 반영된 상태
 
 ### Git 파일 생성 (add)
 
